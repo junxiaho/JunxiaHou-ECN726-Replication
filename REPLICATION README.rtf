@@ -1,0 +1,68 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw18720\paperh27360\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 =======================================================\
+REPLICATION README\
+Paper: "The Gender Gap in Confidence: Expected But Not Accounted For"\
+Authors: Christine L. Exley and Kirby Nielsen\
+Journal: American Economic Review, 2024, 114(3): 851-885\
+Replicated by: Junxia Hou\
+Date: March 2026\
+Software: Stata/SE 19\
+=======================================================\
+\
+HOW TO RUN:\
+1. Place run.do and all 11 .dta files in the same folder (MAIN FOLDER)\
+2. Inside MAIN FOLDER, create two subfolders: "Output" and "Data"\
+3. Open Stata/SE 19\
+4. Set working directory: cd "path/to/MAIN FOLDER"\
+5. Run: do "run.do"\
+6. All tables (.tex) appear in Output/\
+   All figures (.pdf) appear in Output/\
+   Cleaned data appears in Data/\
+\
+REQUIRED DATA FILES (place in MAIN FOLDER):\
+- import_worker.dta\
+- import_main_eval.dta\
+- import_top_half.dta\
+- import_extended.dta\
+- import_alt.dta\
+- import_full.dta\
+- import_prof.dta\
+- import_evaluator_demo.dta\
+- import_evaluator_known.dta\
+- import_worker_undergrad.dta\
+\
+REQUIRED PACKAGES (auto-installed by run.do):\
+- estout\
+- moremata\
+\
+EXPECTED RUN TIME: Under 10 minutes\
+\
+REPLICATION NOTES:\
+- run.do successfully replicates all main tables (Tables 1-7)\
+  and figures (Figures 1-2), plus all appendix tables and figures\
+- The message "(file not found)" before each output file is normal\
+  and simply means the file is being created for the first time\
+- Original code was written for Stata BE 17; replicated on Stata/SE 19\
+  with no modifications required\
+- All output matches the published paper\
+\
+OUTPUT FILE KEY (main tables/figures only):\
+Table 1        \uc0\u8594  Output/Table1.tex\
+Table 2        \uc0\u8594  Output/Table2_PanelA_Delta.tex + Table2_PanelA_Level.tex\
+                         + Table2_PanelB_Delta.tex + Table2_PanelB_Level.tex\
+Table 3        \uc0\u8594  Output/Table3_PanelA.tex + Table3_PanelB.tex\
+Table 4        \uc0\u8594  Output/Table4_PanelA.tex + Table4_PanelB.tex\
+Table 5        \uc0\u8594  Output/Table5_PanelA.tex + Table5_PanelB.tex + Table5_PanelC.tex\
+Table 6        \uc0\u8594  Output/Table6.tex\
+Table 7        \uc0\u8594  Output/Table7_PanelA_Delta.tex + Table7_PanelA_Level.tex\
+                         + Table7_PanelB_Delta.tex + Table7_PanelB_Level.tex\
+Figure 1       \uc0\u8594  Output/Figure1_PanelA.pdf + Figure1_PanelB.pdf\
+Figure 2       \uc0\u8594  Output/Figure2.pdf\
+=======================================================\
+}
